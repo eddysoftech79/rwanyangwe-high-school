@@ -1,0 +1,1220 @@
+/* =========================================================
+   RWANYANGWE HIGH SCHOOL
+   COMPLETE PROFESSIONAL STYLE SHEET
+   ========================================================= */
+
+
+/* =========================================================
+   COLORS
+   =========================================================
+
+   Navy:          #12355B
+   Blue:          #1F5A94
+   Gold:          #D4A72C
+   White:         #FFFFFF
+   Light Grey:    #F5F7FA
+   Dark Text:     #263238
+   Slate:         #607D8B
+
+   ========================================================= */
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #263238;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+    width: 100%;
+    min-height: 95px;
+
+    background-color: #12355B;
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px 5%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow:
+        0 3px 15px rgba(0, 0, 0, 0.20);
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   SCHOOL BRAND
+   ========================================================= */
+
+.school-brand {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   SCHOOL BADGE
+   ========================================================= */
+
+.school-logo {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    background-color: #FFFFFF;
+
+    border: 3px solid #D4A72C;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.20);
+}
+
+
+.school-logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   SCHOOL NAME
+   ========================================================= */
+
+.logo h1 {
+    color: #FFFFFF;
+
+    font-size: 23px;
+
+    line-height: 1.2;
+
+    margin-bottom: 3px;
+}
+
+
+/* MOTTO */
+
+.school-motto {
+    color: #D4A72C !important;
+
+    font-size: 14px !important;
+
+    font-weight: bold;
+
+    font-style: italic;
+
+    margin: 2px 0 !important;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* TAGLINE */
+
+.school-tagline {
+    color: #DCE5EC !important;
+
+    font-size: 11px !important;
+
+    margin-top: 1px !important;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+#mainNav {
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 3px;
+}
+
+
+#mainNav a {
+    color: #FFFFFF;
+
+    text-decoration: none;
+
+    padding: 9px 9px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    border-radius: 5px;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+
+#mainNav a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+
+    color: #D4A72C;
+}
+
+
+/* ADMISSION */
+
+#mainNav .nav-admission {
+    background-color: #D4A72C;
+
+    color: #12355B;
+
+    font-weight: bold;
+
+    margin-left: 5px;
+
+    padding: 10px 13px;
+}
+
+
+#mainNav .nav-admission:hover {
+    background-color: #E3BA45;
+
+    color: #12355B;
+}
+
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+.menu-toggle {
+    display: none;
+
+    background-color: transparent;
+
+    color: #FFFFFF;
+
+    border: none;
+
+    font-size: 32px;
+
+    cursor: pointer;
+
+    padding: 5px 10px;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+    min-height: 560px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+    color: #FFFFFF;
+
+    background:
+        linear-gradient(
+            135deg,
+            #12355B,
+            #1F5A94
+        );
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 380px;
+    height: 380px;
+
+    border-radius: 50%;
+
+    background-color:
+        rgba(212, 167, 44, 0.10);
+
+    top: -170px;
+    left: -100px;
+}
+
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 330px;
+    height: 330px;
+
+    border-radius: 50%;
+
+    background-color:
+        rgba(255, 255, 255, 0.07);
+
+    bottom: -170px;
+    right: -90px;
+}
+
+
+.hero-content {
+    max-width: 900px;
+
+    position: relative;
+
+    z-index: 2;
+
+    animation:
+        heroFadeIn 1.2s ease;
+}
+
+
+.hero-badge {
+    display: inline-block;
+
+    color: #D4A72C;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+
+    padding: 7px 15px;
+
+    border: 1px solid #D4A72C;
+
+    border-radius: 20px;
+
+    background-color:
+        rgba(255, 255, 255, 0.08);
+}
+
+
+.hero h2 {
+    color: #FFFFFF;
+
+    font-size: 52px;
+
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+
+    font-weight: 800;
+
+    text-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.30);
+}
+
+
+.hero h2::after {
+    content: "";
+
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    background-color: #D4A72C;
+
+    margin: 18px auto 0;
+
+    border-radius: 5px;
+}
+
+
+.hero p {
+    color: #F5F7FA;
+
+    font-size: 21px;
+
+    max-width: 750px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.button {
+    display: inline-block;
+
+    background-color: #1F5A94;
+
+    color: #FFFFFF;
+
+    text-decoration: none;
+
+    padding: 12px 22px;
+
+    border-radius: 6px;
+
+    border: 2px solid #1F5A94;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.button:hover {
+    background-color: #12355B;
+
+    border-color: #12355B;
+
+    transform: translateY(-2px);
+}
+
+
+/* HERO BUTTON */
+
+.hero .button {
+    background-color: #D4A72C;
+
+    color: #12355B;
+
+    border-color: #D4A72C;
+}
+
+
+.hero .button:hover {
+    background-color: #E3BA45;
+
+    border-color: #E3BA45;
+}
+
+
+.hero-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+.section {
+    padding: 70px 5%;
+
+    text-align: center;
+
+    background-color: #FFFFFF;
+}
+
+
+.grey-section {
+    background-color: #F5F7FA;
+}
+
+
+.section h2 {
+    color: #12355B;
+
+    font-size: 34px;
+
+    margin-bottom: 15px;
+
+    display: inline-block;
+}
+
+
+.section h2::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 4px;
+
+    background-color: #D4A72C;
+
+    margin: 10px auto 0;
+
+    border-radius: 5px;
+}
+
+
+.section > p {
+    max-width: 800px;
+
+    margin: 0 auto 35px;
+
+    font-size: 17px;
+
+    color: #607D8B;
+}
+
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+}
+
+
+.card {
+    background-color: #FFFFFF;
+
+    padding: 30px 25px;
+
+    border-radius: 10px;
+
+    border-top: 4px solid #1F5A94;
+
+    box-shadow:
+        0 5px 18px rgba(18, 53, 91, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-7px);
+
+    border-top-color: #D4A72C;
+
+    box-shadow:
+        0 12px 25px rgba(18, 53, 91, 0.16);
+}
+
+
+.card h3 {
+    color: #12355B;
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+
+.card p {
+    color: #607D8B;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   GALLERY
+   ========================================================= */
+
+.gallery {
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.gallery-item {
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    min-height: 220px;
+
+    background-color: #FFFFFF;
+
+    box-shadow:
+        0 5px 15px rgba(18, 53, 91, 0.12);
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+
+.gallery-placeholder {
+    min-height: 220px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #12355B,
+            #607D8B
+        );
+
+    color: #FFFFFF;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    font-size: 50px;
+
+    padding: 20px;
+}
+
+
+.gallery-placeholder span {
+    display: block;
+
+    font-size: 17px;
+
+    margin-top: 10px;
+
+    font-weight: bold;
+}
+
+
+/* REAL GALLERY IMAGES */
+
+.gallery-item img {
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================================
+   SCHOOL TOUR VIDEO
+   ========================================================= */
+
+.video-container {
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: 30px auto 0;
+
+    background-color: #FFFFFF;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 6px 20px rgba(18, 53, 91, 0.15);
+
+    border-top: 4px solid #D4A72C;
+}
+
+
+.video-container iframe {
+    width: 100%;
+
+    height: 520px;
+
+    display: block;
+
+    border: none;
+
+    border-radius: 8px;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+#contact {
+    background-color: #F5F7FA;
+}
+
+
+#contact .cards {
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    margin-bottom: 40px;
+}
+
+
+#contact .card {
+    min-height: 230px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+#contact .card .button {
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+   MAP
+   ========================================================= */
+
+.map-container {
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+
+    background-color: #FFFFFF;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 18px rgba(18, 53, 91, 0.12);
+
+    border-top: 4px solid #D4A72C;
+}
+
+
+.map-container h3 {
+    color: #12355B;
+
+    font-size: 23px;
+
+    margin-bottom: 15px;
+}
+
+
+.map-container iframe {
+    display: block;
+
+    width: 100%;
+
+    min-height: 400px;
+
+    border: none;
+
+    border-radius: 7px;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    background-color: #12355B;
+
+    color: #FFFFFF;
+
+    text-align: center;
+
+    padding: 30px 15px;
+}
+
+
+footer::before {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 3px;
+
+    background-color: #D4A72C;
+
+    margin: 0 auto 15px;
+
+    border-radius: 5px;
+}
+
+
+footer .copyright {
+    color: #FFFFFF;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   ANIMATION
+   ========================================================= */
+
+@keyframes heroFadeIn {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    header {
+        padding: 10px 3%;
+    }
+
+
+    #mainNav {
+        gap: 1px;
+    }
+
+
+    #mainNav a {
+        padding: 8px 6px;
+
+        font-size: 12px;
+    }
+
+
+    .hero h2 {
+        font-size: 44px;
+    }
+
+
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .gallery {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    #contact .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   PHONE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 8px 5%;
+    }
+
+
+    .school-brand {
+        flex: 1;
+
+        gap: 10px;
+    }
+
+
+    .school-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .logo h1 {
+        font-size: 17px;
+    }
+
+
+    .school-motto {
+        font-size: 11px !important;
+    }
+
+
+    .school-tagline {
+        font-size: 9px !important;
+    }
+
+
+    /* MENU BUTTON */
+
+    .menu-toggle {
+        display: block;
+
+        margin-left: auto;
+    }
+
+
+    /* MOBILE NAV */
+
+    #mainNav {
+        display: none;
+
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 7px;
+
+        padding: 15px 0 5px;
+
+        margin-left: 0;
+    }
+
+
+    #mainNav.active {
+        display: flex;
+    }
+
+
+    #mainNav a {
+        width: 100%;
+
+        max-width: 320px;
+
+        text-align: center;
+
+        padding: 11px;
+
+        font-size: 15px;
+    }
+
+
+    #mainNav .nav-admission {
+        width: 100%;
+
+        max-width: 320px;
+
+        margin: 5px 0 0;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 500px;
+
+        padding: 60px 20px;
+    }
+
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+
+    .hero p {
+        font-size: 17px;
+    }
+
+
+    .hero-buttons {
+        width: 100%;
+
+        max-width: 320px;
+
+        margin: 20px auto 0;
+    }
+
+
+    .hero-buttons a {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* SECTIONS */
+
+    .section {
+        padding: 55px 5%;
+    }
+
+
+    .section h2 {
+        font-size: 30px;
+    }
+
+
+    .section > p {
+        font-size: 16px;
+    }
+
+
+    /* CARDS */
+
+    .cards {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    #contact .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* GALLERY */
+
+    .gallery {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .gallery-item {
+        min-height: 200px;
+    }
+
+
+    .gallery-placeholder {
+        min-height: 200px;
+    }
+
+
+    .gallery-item img {
+        height: 200px;
+    }
+
+
+    /* VIDEO */
+
+    .video-container {
+        padding: 8px;
+    }
+
+
+    .video-container iframe {
+        height: 260px;
+    }
+
+
+    /* MAP */
+
+    .map-container {
+        padding: 12px;
+    }
+
+
+    .map-container iframe {
+        min-height: 300px;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .school-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+
+    .logo h1 {
+        font-size: 15px;
+    }
+
+
+    .school-motto {
+        font-size: 10px !important;
+    }
+
+
+    .school-tagline {
+        font-size: 8px !important;
+    }
+
+
+    .menu-toggle {
+        font-size: 29px;
+    }
+
+
+    .hero {
+        min-height: 480px;
+
+        padding: 50px 15px;
+    }
+
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    .section {
+        padding: 45px 15px;
+    }
+
+
+    .section h2 {
+        font-size: 27px;
+    }
+
+
+    .card {
+        padding: 25px 20px;
+    }
+
+
+    .video-container iframe {
+        height: 220px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+    }
+}
+.facility-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: block;
+}
+
