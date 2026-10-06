@@ -1217,4 +1217,344 @@ footer .copyright {
     margin-bottom: 15px;
     display: block;
 }
+/* =========================================================
+   NEWS & EVENTS
+   ========================================================= */
+
+.news-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+/* NEWS / EVENT CARD */
+
+.news-card {
+    background-color: #FFFFFF;
+
+    padding: 30px 25px;
+
+    border-radius: 10px;
+
+    border-top: 4px solid #1F5A94;
+
+    box-shadow:
+        0 5px 18px rgba(18, 53, 91, 0.10);
+
+    text-align: left;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.news-card:hover {
+    transform: translateY(-6px);
+
+    border-top-color: #D4A72C;
+
+    box-shadow:
+        0 12px 25px rgba(18, 53, 91, 0.16);
+}
+
+
+.news-card h3 {
+    color: #12355B;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+
+.news-card p {
+    color: #607D8B;
+
+    font-size: 15px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   NEWS DATE
+   ========================================================= */
+
+.news-date {
+    display: inline-block;
+
+    background-color: #D4A72C;
+
+    color: #12355B;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    padding: 5px 10px;
+
+    border-radius: 4px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   CANDIDATES' DEDICATION
+   ========================================================= */
+
+.candidates-dedication {
+    border-left: 5px solid #D4A72C;
+
+    background-color: #F5F7FA;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    margin-top: 15px;
+}
+
+
+.candidates-dedication h3 {
+    color: #12355B;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+
+.candidates-dedication p {
+    color: #607D8B;
+}
+
+
+/* =========================================================
+   UPCOMING EVENTS
+   ========================================================= */
+
+.upcoming-events {
+    max-width: 1150px;
+
+    margin: 40px auto 0;
+
+    background-color: #F5F7FA;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    border-top: 4px solid #D4A72C;
+
+    box-shadow:
+        0 5px 18px rgba(18, 53, 91, 0.08);
+}
+
+
+.upcoming-events h3 {
+    color: #12355B;
+
+    font-size: 24px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+
+/* INDIVIDUAL UPCOMING EVENT */
+
+.upcoming-event {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background-color: #FFFFFF;
+
+    padding: 18px 20px;
+
+    margin-bottom: 12px;
+
+    border-radius: 7px;
+
+    border-left: 4px solid #1F5A94;
+
+    box-shadow:
+        0 3px 10px rgba(18, 53, 91, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.upcoming-event:hover {
+    transform: translateX(5px);
+
+    border-left-color: #D4A72C;
+}
+
+
+.upcoming-event:last-child {
+    margin-bottom: 0;
+}
+
+
+.upcoming-event strong {
+    color: #12355B;
+}
+
+
+/* EVENT ICON */
+
+.event-icon {
+    min-width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+    background-color: #12355B;
+
+    color: #D4A72C;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 22px;
+}
+
+
+/* EVENT INFORMATION */
+
+.event-info {
+    flex: 1;
+}
+
+
+.event-info h4 {
+    color: #12355B;
+
+    font-size: 17px;
+
+    margin-bottom: 3px;
+}
+
+
+.event-info p {
+    color: #607D8B;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   ACHIEVEMENTS
+   ========================================================= */
+
+.achievement-card {
+    background-color: #FFFFFF;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    border-left: 4px solid #D4A72C;
+
+    box-shadow:
+        0 5px 18px rgba(18, 53, 91, 0.10);
+}
+
+
+.achievement-card h3 {
+    color: #12355B;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   NEWS RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .news-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .news-container {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .news-card {
+        padding: 25px 20px;
+    }
+
+
+    .upcoming-events {
+        padding: 22px 18px;
+    }
+
+
+    .upcoming-event {
+        align-items: flex-start;
+
+        gap: 12px;
+
+        padding: 15px;
+    }
+
+
+    .event-icon {
+        min-width: 42px;
+
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    .news-card h3 {
+        font-size: 20px;
+    }
+
+
+    .upcoming-events h3 {
+        font-size: 21px;
+    }
+
+
+    .upcoming-event {
+        flex-direction: column;
+    }
+
+
+    .event-icon {
+        margin-bottom: 3px;
+    }
+}
 
