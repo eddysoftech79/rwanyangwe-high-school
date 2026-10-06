@@ -1557,4 +1557,524 @@ footer .copyright {
         margin-bottom: 3px;
     }
 }
+/* =========================================================
+   SCHOOL FACILITIES - MODERN DESIGN
+   Rwanyangwe High School
+   ========================================================= */
 
+
+/* ---------------------------------------------------------
+   MAIN FACILITIES SECTION
+   --------------------------------------------------------- */
+
+.school-facilities {
+    background-color: #F5F7FA;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   SECTION HEADER
+   --------------------------------------------------------- */
+
+.facilities-header {
+    max-width: 850px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.facilities-label {
+    display: inline-block;
+    color: #D4A72C;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.facilities-header h2 {
+    color: #12355B;
+    font-size: 38px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.facilities-header h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background-color: #D4A72C;
+    margin: 14px auto 0;
+    border-radius: 3px;
+}
+
+.facilities-header p {
+    max-width: 750px;
+    margin: 20px auto 0;
+    color: #607D8B;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* ---------------------------------------------------------
+   FEATURED FACILITY
+   --------------------------------------------------------- */
+
+.featured-facility {
+    max-width: 1150px;
+    margin: 0 auto 55px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow:
+        0 8px 30px rgba(18, 53, 91, 0.12);
+}
+
+.featured-facility-image {
+    min-height: 360px;
+    overflow: hidden;
+}
+
+.featured-facility-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.featured-facility:hover .featured-facility-image img {
+    transform: scale(1.04);
+}
+
+.featured-facility-content {
+    padding: 45px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 5px solid #D4A72C;
+}
+
+.facility-category {
+    display: inline-block;
+    color: #1F5A94;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.featured-facility-content h3 {
+    color: #12355B;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.featured-facility-content p {
+    color: #607D8B;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.facility-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.facility-features li {
+    color: #263238;
+    margin-bottom: 10px;
+    padding-left: 28px;
+    position: relative;
+}
+
+.facility-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #D4A72C;
+    font-weight: bold;
+}
+
+
+/* ---------------------------------------------------------
+   FACILITIES GRID
+   --------------------------------------------------------- */
+
+.facilities-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* ---------------------------------------------------------
+   FACILITY CARD
+   --------------------------------------------------------- */
+
+.facility-card {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow:
+        0 5px 18px rgba(18, 53, 91, 0.09);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.facility-card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 14px 30px rgba(18, 53, 91, 0.16);
+}
+
+
+/* ---------------------------------------------------------
+   FACILITY IMAGE
+   --------------------------------------------------------- */
+
+.facility-image-wrapper {
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    background-color: #12355B;
+}
+
+.facility-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.facility-card:hover .facility-image-wrapper img {
+    transform: scale(1.07);
+}
+
+
+/* ---------------------------------------------------------
+   NUMBER BADGE
+   --------------------------------------------------------- */
+
+.facility-number {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #D4A72C;
+    color: #12355B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 800;
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+
+/* ---------------------------------------------------------
+   FACILITY CARD CONTENT
+   --------------------------------------------------------- */
+
+.facility-card-content {
+    padding: 25px;
+    border-top: 3px solid #1F5A94;
+}
+
+.facility-small-label {
+    color: #1F5A94;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.facility-card-content h3 {
+    color: #12355B;
+    font-size: 22px;
+    margin: 8px 0 10px;
+}
+
+.facility-card-content p {
+    color: #607D8B;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* ---------------------------------------------------------
+   FACILITY HIGHLIGHTS
+   --------------------------------------------------------- */
+
+.facility-highlights {
+    max-width: 1150px;
+    margin: 55px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.facility-highlight {
+    background-color: #12355B;
+    color: #FFFFFF;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border-bottom: 4px solid #D4A72C;
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.facility-highlight:hover {
+    transform: translateY(-5px);
+    background-color: #1F5A94;
+}
+
+.highlight-icon {
+    min-width: 55px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #D4A72C;
+    color: #12355B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.facility-highlight h3 {
+    color: #FFFFFF;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.facility-highlight p {
+    color: #E7EDF2;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* ---------------------------------------------------------
+   CLOSING CTA
+   --------------------------------------------------------- */
+
+.facilities-cta {
+    max-width: 1150px;
+    margin: 55px auto 0;
+    padding: 45px;
+    background:
+        linear-gradient(
+            135deg,
+            #12355B,
+            #1F5A94
+        );
+    border-radius: 14px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.facilities-cta::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 2px solid rgba(212, 167, 44, 0.25);
+    border-radius: 50%;
+    top: -80px;
+    right: -50px;
+}
+
+.facilities-cta::after {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border: 2px solid rgba(212, 167, 44, 0.20);
+    border-radius: 50%;
+    bottom: -70px;
+    left: -40px;
+}
+
+.facilities-cta div {
+    position: relative;
+    z-index: 2;
+}
+
+.facilities-cta span {
+    color: #D4A72C;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.facilities-cta h3 {
+    color: #FFFFFF;
+    font-size: 28px;
+    margin: 12px 0;
+}
+
+.facilities-cta p {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #E7EDF2;
+    line-height: 1.8;
+}
+
+
+/* ---------------------------------------------------------
+   TABLET
+   --------------------------------------------------------- */
+
+@media (max-width: 1000px) {
+
+    .featured-facility {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-facility-image {
+        min-height: 300px;
+    }
+
+    .featured-facility-image img {
+        min-height: 300px;
+    }
+
+    .featured-facility-content {
+        border-left: none;
+        border-top: 5px solid #D4A72C;
+    }
+
+    .facilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .facility-highlights {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    .facilities-header {
+        margin-bottom: 35px;
+    }
+
+    .facilities-header h2 {
+        font-size: 30px;
+    }
+
+    .facilities-header p {
+        font-size: 14px;
+    }
+
+    .featured-facility {
+        margin-bottom: 40px;
+    }
+
+    .featured-facility-image,
+    .featured-facility-image img {
+        min-height: 240px;
+    }
+
+    .featured-facility-content {
+        padding: 30px 25px;
+    }
+
+    .featured-facility-content h3 {
+        font-size: 25px;
+    }
+
+    .facilities-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .facility-image-wrapper {
+        height: 230px;
+    }
+
+    .facility-highlights {
+        margin-top: 40px;
+    }
+
+    .facilities-cta {
+        margin-top: 40px;
+        padding: 35px 22px;
+    }
+
+    .facilities-cta h3 {
+        font-size: 24px;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   SMALL PHONES
+   --------------------------------------------------------- */
+
+@media (max-width: 420px) {
+
+    .facilities-header h2 {
+        font-size: 27px;
+    }
+
+    .featured-facility-content {
+        padding: 25px 20px;
+    }
+
+    .featured-facility-content h3 {
+        font-size: 22px;
+    }
+
+    .facility-card-content {
+        padding: 20px;
+    }
+
+    .facility-card-content h3 {
+        font-size: 20px;
+    }
+
+    .facility-highlight {
+        padding: 20px;
+    }
+
+    .highlight-icon {
+        min-width: 48px;
+        width: 48px;
+        height: 48px;
+        font-size: 21px;
+    }
+
+    .facilities-cta {
+        padding: 30px 18px;
+    }
+
+}
